@@ -35,7 +35,6 @@ temp.*
 private*
 *private*
 src/private*
-src/private*
 src/*private*
 src/private/*
 src/*private/*
