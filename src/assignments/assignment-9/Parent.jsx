@@ -8,6 +8,15 @@ import Footer from "./components/Footer";
 import { Routes, Route } from "react-router-dom";
 
 const Parent = () => {
+    
+    return (
+        <HomePage/>
+    );
+}
+
+export default Parent;
+
+const HomePage = ()=>{
     return (
         <div>
             <Header/>
@@ -21,5 +30,3 @@ const Parent = () => {
         </div>
     );
 }
-
-export default Parent;
