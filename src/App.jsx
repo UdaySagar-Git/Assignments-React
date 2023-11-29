@@ -25,52 +25,52 @@ function App() {
     {
       name: "Assignment-2",
       link: "/assignment-2",
-      code: "https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-1"
+      code: "https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-2"
     },
     {
       name: "Assignment-3",
       link: "/assignment-3",
-      code: "https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-1"
+      code: "https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-3"
     },
     {
       name: "Assignment-4-1",
       link: "/assignment-4-1",
-      code: "https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-1"
+      code: "https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-4/1"
     },
     {
       name: "Assignment-4-2",
       link: "/assignment-4-2",
-      code: "https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-1"
+      code: "https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-4/2"
     },
     {
       name: "Assignment-5",
       link: "/assignment-5",
-      code: "https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-1"
+      code: "https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-5"
     },
     {
       name: "Assignment-6",
       link: "/assignment-6",
-      code: "https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-1"
+      code: "https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-6"
     },
     {
       name: "Assignment-7-1",
       link: "/assignment-7-1",
-      code: "https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-1"
+      code: "https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-7/1"
     },
     {
       name: "Assignment-7-2",
       link: "/assignment-7-2",
-      code: "https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-1"
+      code: "https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-7/2"
     },
     {
       name: "Assignment-8",
       link: "/assignment-8",
-      code: "https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-1"
+      code: "https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-8"
     },
     {
       name: "Assignment-9",
       link: "/assignment-9",
-      code: "https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-1"
+      code: "https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-9"
     },
   ]
 
