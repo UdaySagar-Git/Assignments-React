@@ -37,6 +37,8 @@ function App() {
 }
 export default App;
 
+import { Link } from 'react-router-dom';
+
 const Home = () => {
 
   return (
@@ -44,49 +46,49 @@ const Home = () => {
       <div className="flex flex-col gap-2 justify-center ">
         <h1 className="text-4xl font-bold text-center text-white mb-5">React Assignments</h1>
         <div>
-          <a href="/assignment-1" target="_blank" ><button>Assignment-1</button></a>
+          <Link to="/assignment-1"><button>Assignment-1</button></Link>
           <a href="https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-1" target="_blank" ><button>Code</button></a>
         </div>
         <div>
-          <a href="/assignment-2" target="_blank" ><button>Assignment-2</button></a>
+          <Link to="/assignment-2"><button>Assignment-2</button></Link>
           <a href="https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-2" target="_blank" ><button>Code</button></a>
         </div>
 
         <div>
-          <a href="/assignment-3" target="_blank" ><button>Assignment-3</button></a>
+          <Link to="/assignment-3"><button>Assignment-3</button></Link>
           <a href="https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-3" target="_blank" ><button>Code</button></a>
         </div>
         <div>
-          <a href="/assignment-4-1" target="_blank" ><button>Assignment-4-1</button></a>
+          <Link to="/assignment-4-1"><button>Assignment-4-1</button></Link>
           <a href="https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-4/1/" target="_blank" ><button>Code</button></a>
         </div>
         <div>
-          <a href="/assignment-4-2" target="_blank" ><button>Assignment-4-2</button></a>
+          <Link to="/assignment-4-2"><button>Assignment-4-2</button></Link>
           <a href="https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-4/2/" target="_blank" ><button>Code</button></a>
         </div>
 
         <div>
-          <a href="/assignment-5" target="_blank" ><button>Assignment-5</button></a>
+          <Link to="/assignment-5"><button>Assignment-5</button></Link>
           <a href="https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-5" target="_blank" ><button>Code</button></a>
         </div>
         <div>
-          <a href="/assignment-6" target="_blank" ><button>Assignment-6</button></a>
+          <Link to="/assignment-6"><button>Assignment-6</button></Link>
           <a href="https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-6" target="_blank" ><button>Code</button></a>
         </div>
         <div>
-          <a href="/assignment-7-1" target="_blank" ><button>Assignment-7-1</button></a>
+          <Link to="/assignment-7-1"><button>Assignment-7-1</button></Link>
           <a href="https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-7/1/" target="_blank" ><button>Code</button></a>
         </div>
         <div>
-          <a href="/assignment-7-2" target="_blank" ><button>Assignment-7-2</button></a>
+          <Link to="/assignment-7-2"><button>Assignment-7-2</button></Link>
           <a href="https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-7/2/" target="_blank" ><button>Code</button></a>
         </div>
         <div>
-          <a href="/assignment-8" target="_blank" ><button>Assignment-8</button></a>
+          <Link to="/assignment-8"><button>Assignment-8</button></Link>
           <a href="https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-8/" target="_blank" ><button>Code</button></a>
         </div>
         <div>
-          <a href="/assignment-9" target="_blank" ><button>Assignment-9</button></a>
+          <Link to="/assignment-9"><button>Assignment-9</button></Link>
           <a href="https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-9/" target="_blank" ><button>Code</button></a>
         </div>
 
