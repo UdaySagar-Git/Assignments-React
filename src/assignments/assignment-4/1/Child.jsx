@@ -11,12 +11,12 @@ const Child = () => {
         {"id": 7, "name": "Chris Miller", "profession": "Full Stack Developer"},
         {"id": 8, "name": "Lisa Taylor", "profession": "Marketing Specialist"}
     ];
-
+    const imgpath = "https://raw.githubusercontent.com/UdaySagar-Git/Assignments-React/main/src/assignments/assignment-4/1/assests/img.png"
     return (
         <div className="flex flex-wrap w-full gap-4 justify-center p-10">
             {data.map(user => (
                 <div key={user.id} className="bg-slate-200 rounded-lg shadow-md p-4 w-1/5 m-5 flex justify-center flex-col items-center ">
-                    <img src="src/assignments/assignment-4/1/assests/img.png" alt="Profile" className="w-50 rounded-full mx-auto mb-4 " />
+                    <img src={imgpath} alt="Profile" className="w-50 rounded-full mx-auto mb-4 " />
                     <h2 className="text-lg font-semibold">{user.name}</h2>
                     <p className="text-gray-500">{user.profession}</p>
                     <button className="bg-slate-800 shadow-md text-white px-4 py-2 rounded mt-4">Profile</button>

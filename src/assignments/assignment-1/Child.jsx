@@ -8,7 +8,7 @@ const Child = () => {
     };
 
     const branches = ['cse', 'ece', 'eee', 'civil', 'mech'];
-
+    const imgpath = "https://raw.githubusercontent.com/UdaySagar-Git/Assignments-React/main/src/assignments/assignment-1/assets/img.jpg";
     return (
         <div className="container mx-auto ">
             <h1 className="text-2xl font-bold mb-4">Dynamic Content</h1>
@@ -26,7 +26,7 @@ const Child = () => {
             </ul>
 
             <h1 className="text-2xl font-bold mt-8 mb-4">Image from file</h1>
-            <img src="src/assignments/assignment-1/assets/img.jpg" alt="" className="h-72 w-48 mb-4 "/>
+            <img src={imgpath} alt="" className="h-72 w-48 mb-4 "/>
 
             <h1 className="text-2xl font-bold mt-8 mb-4">Image from web</h1>
             <img src="https://images.pexels.com/photos/3015288/pexels-photo-3015288.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" className="h-72 w-48 mb-4 "/>

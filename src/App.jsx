@@ -12,11 +12,16 @@ import Assignment7_2 from './assignments/assignment-7/2/Parent';
 import Assignment8 from './assignments/assignment-8/Parent';
 import Assignment9 from './assignments/assignment-9/Parent';
 
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 
 function App() {
+  const { pathname } = useLocation();
   return (
     <div className="">
+      <div className="flex justify-center items-center bg-slate-600 gap-20  text-white h-[30px] sticky top-0">
+        <h1 className="text-xl font-bold ">You are currently in : {pathname}</h1>
+        <Link to="/"><button className="bg-rose-600 text-white px-4 py-1 rounded-md">Home</button></Link>
+      </div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/assignment-1" element={<Assignment1 />} />
@@ -41,58 +46,74 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
 
+  const assignmentsArray = [
+    {
+      name: "Assignment-1",
+      link: "/assignment-1",
+      code: "https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-1"
+    },
+    {
+      name: "Assignment-2",
+      link: "/assignment-2",
+      code: "https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-1"
+    },
+    {
+      name: "Assignment-3",
+      link: "/assignment-3",
+      code: "https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-1"
+    },
+    {
+      name: "Assignment-4-1",
+      link: "/assignment-4-1",
+      code: "https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-1"
+    },
+    {
+      name: "Assignment-4-2",
+      link: "/assignment-4-2",
+      code: "https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-1"
+    },
+    {
+      name: "Assignment-5",
+      link: "/assignment-5",
+      code: "https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-1"
+    },
+    {
+      name: "Assignment-6",
+      link: "/assignment-6",
+      code: "https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-1"
+    },
+    {
+      name: "Assignment-7-1",
+      link: "/assignment-7-1",
+      code: "https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-1"
+    },
+    {
+      name: "Assignment-7-2",
+      link: "/assignment-7-2",
+      code: "https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-1"
+    },
+    {
+      name: "Assignment-8",
+      link: "/assignment-8",
+      code: "https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-1"
+    },
+    {
+      name: "Assignment-9",
+      link: "/assignment-9",
+      code: "https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-1"
+    },
+  ]
+
   return (
     <div className="min-h-screen flex justify-center items-center bg-slate-700  homecss">
       <div className="flex flex-col gap-2 justify-center ">
         <h1 className="text-4xl font-bold text-center text-white mb-5">React Assignments</h1>
-        <div>
-          <Link to="/assignment-1"><button>Assignment-1</button></Link>
-          <a href="https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-1" target="_blank" ><button>Code</button></a>
-        </div>
-        <div>
-          <Link to="/assignment-2"><button>Assignment-2</button></Link>
-          <a href="https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-2" target="_blank" ><button>Code</button></a>
-        </div>
-
-        <div>
-          <Link to="/assignment-3"><button>Assignment-3</button></Link>
-          <a href="https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-3" target="_blank" ><button>Code</button></a>
-        </div>
-        <div>
-          <Link to="/assignment-4-1"><button>Assignment-4-1</button></Link>
-          <a href="https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-4/1/" target="_blank" ><button>Code</button></a>
-        </div>
-        <div>
-          <Link to="/assignment-4-2"><button>Assignment-4-2</button></Link>
-          <a href="https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-4/2/" target="_blank" ><button>Code</button></a>
-        </div>
-
-        <div>
-          <Link to="/assignment-5"><button>Assignment-5</button></Link>
-          <a href="https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-5" target="_blank" ><button>Code</button></a>
-        </div>
-        <div>
-          <Link to="/assignment-6"><button>Assignment-6</button></Link>
-          <a href="https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-6" target="_blank" ><button>Code</button></a>
-        </div>
-        <div>
-          <Link to="/assignment-7-1"><button>Assignment-7-1</button></Link>
-          <a href="https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-7/1/" target="_blank" ><button>Code</button></a>
-        </div>
-        <div>
-          <Link to="/assignment-7-2"><button>Assignment-7-2</button></Link>
-          <a href="https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-7/2/" target="_blank" ><button>Code</button></a>
-        </div>
-        <div>
-          <Link to="/assignment-8"><button>Assignment-8</button></Link>
-          <a href="https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-8/" target="_blank" ><button>Code</button></a>
-        </div>
-        <div>
-          <Link to="/assignment-9"><button>Assignment-9</button></Link>
-          <a href="https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-9/" target="_blank" ><button>Code</button></a>
-        </div>
-
-
+        {assignmentsArray.map((assignment, index) => (
+            <div key={index}>
+              <Link to={assignment.link}><button>{assignment.name}</button></Link>
+              <a href={assignment.code} target="_blank" ><button>Code</button></a>
+            </div>
+        ))}
       </div>
     </div>
   );

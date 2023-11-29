@@ -13,9 +13,10 @@ const Parent = () => {
 export default Parent;
 
 const NavBar = () => {
+    const imgpath = "https://raw.githubusercontent.com/UdaySagar-Git/Assignments-React/main/src/assignments/assignment-5/assests/logo.jpg";
     return ( 
         <div className="h-[56px] border-b shadow-md flex justify-between sticky top-0 bg-white">
-            <img src="src/assignments/assignment-4/1/assests/logo.jpg" alt="LOGO" className="h-full" />
+            <img src={imgpath} alt="LOGO" className="h-full" />
             <div className="h-full mr-16">
                 <ul className="flex h-full items-center gap-20 ">
                     <li className="cursor-pointer bg-slate-700 text-white px-4 py-1 rounded-md">Home</li>
