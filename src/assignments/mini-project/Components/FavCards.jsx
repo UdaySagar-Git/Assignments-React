@@ -18,8 +18,8 @@ const FavCards = ({ data, favoriteItem }) => {
                 fav.length === 0 ? <div className='text-2xl font-bold flex justify-center items-center h-[80vh] m-0'>No Data Found</div> :
                     fav.map((item) => {
                         return (
-                            <div className="bg-gray-200 rounded-lg p-4 my-10 flex items-center justify-between gap-4 sm:w-[70vw] md:w-[60vw]  mx-10 sm:mx-auto hover:cursor-pointer hover:bg-gray-400" key={item.id} >
-                                <div className='flex items-center gap-10 mx-10' onClick={() => navigate(`/mini-project/details/${item.id}`)}>
+                            <div className="bg-gray-200 rounded-lg p-4 my-10 flex items-center justify-between gap-4 sm:w-[70vw] md:w-[60vw]  mx-10 sm:mx-auto hover:bg-gray-400" key={item.id} >
+                                <div className='flex items-center gap-10 mx-10  hover:cursor-pointer ' onClick={() => navigate(`/mini-project/details/${item.id}`)}>
                                     <div>
                                         <img src={item.image} alt="" className='h-[50px] w-[50px] object-contain' />
                                     </div>
