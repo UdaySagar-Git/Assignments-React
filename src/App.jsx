@@ -11,6 +11,7 @@ import Assignment7_1 from './assignments/assignment-7/1/Parent';
 import Assignment7_2 from './assignments/assignment-7/2/Parent';
 import Assignment8 from './assignments/assignment-8/Parent';
 import Assignment9 from './assignments/assignment-9/Parent';
+import MiniProject from './assignments/mini-project/Parent';
 
 import { Routes, Route, useLocation } from 'react-router-dom';
 
@@ -72,13 +73,18 @@ function App() {
       link: "/assignment-9",
       code: "https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/assignment-9"
     },
+    {
+      name: "Mini-Project",
+      link: "/mini-project",
+      code: "https://github.com/UdaySagar-Git/Assignments-React/tree/main/src/assignments/mini-project"
+    },
   ]
 
   return (
     <div className="">
-      <div className="flex justify-center items-center bg-slate-600 gap-20 text-white h-[35px] sticky top-0">
-        <h1 className="text-xl font-bold">You are currently in :<span className='font-mono text-red-500 bg-black px-2 py-1 mx-3 rounded-md'>{pathname}</span></h1>
-        <Link to="/"><button className="bg-rose-600 text-white px-4 py-1 rounded-md">Home</button></Link>
+      <div className="flex justify-center items-center bg-slate-600 gap-20 text-white h-[35px] sticky top-0 z-50">
+        <h1 className="text-xl font-bold">You are currently in :<span className='px-2 py-1 mx-3 font-mono text-red-500 bg-black rounded-md'>{pathname}</span></h1>
+        <Link to="/"><button className="px-4 py-1 text-white rounded-md bg-rose-600">Home</button></Link>
       </div>
 
       <Routes>
@@ -94,6 +100,7 @@ function App() {
         <Route path="/assignment-7-2" element={<Assignment7_2 />} />
         <Route path="/assignment-8" element={<Assignment8 />} />
         <Route path="/assignment-9/*" element={<Assignment9 />} />
+        <Route path="/mini-project/*" element={<MiniProject />} />
       </Routes>
 
     </div>
@@ -106,9 +113,9 @@ import { Link } from 'react-router-dom';
 const Home = ({assignmentsArray}) => {
 
   return (
-    <div className="min-h-screen flex justify-center items-center bg-slate-700  homecss">
-      <div className="flex flex-col gap-2 justify-center ">
-        <h1 className="text-4xl font-bold text-center text-white mb-5">React Assignments</h1>
+    <div className="flex items-center justify-center min-h-screen bg-slate-700 homecss">
+      <div className="flex flex-col justify-center gap-2 ">
+        <h1 className="mb-5 text-4xl font-bold text-center text-white">React Assignments</h1>
         {assignmentsArray.map((assignment, index) => (
           <div key={index}>
             <Link to={assignment.link}><button>{assignment.name}</button></Link>
