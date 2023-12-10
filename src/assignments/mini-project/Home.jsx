@@ -1,15 +1,16 @@
 import React, { useState } from 'react'
+import { Route, Routes } from 'react-router-dom'
+import { useEffect } from 'react'
+
 import Header from './Components/Header'
 import Footer from './Components/Footer'
 import Cards from './Components/Cards'
-import { Route, Routes } from 'react-router-dom'
 import Details from './Components/Details'
 import FavCards from './Components/FavCards'
-import { useEffect } from 'react'
-
 const Home = () => {
   const [data, setData] = useState([]);
   const [value, setValue] = useState('');
+  const [filterData, setFilterData] = useState('all');
 
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -36,19 +37,16 @@ const Home = () => {
   }
 
   return (
-    <Routes>
-      <Route path='/' element={<div>
-        <Header value={value} setValue={setValue} />
-        <Cards value={value} data={data} setData={setData} favoriteItem={favoriteItem} loading={loading} error={error} />
-        <Footer />
-      </div>} />
-      <Route path='/favorite' element={<div>
-        <Header value={value} setValue={setValue} />
-        <FavCards data={data} favoriteItem={favoriteItem} />
-        <Footer />
-      </div>} />
-      <Route path='/details/:id' element={<Details />} />
-    </Routes>
+    <div>
+      <Header value={value} setValue={setValue} />
+      <Routes>
+        <Route path='/' element={<Cards value={value} data={data} setData={setData} favoriteItem={favoriteItem} loading={loading} error={error} filterData={filterData} setFilterData={setFilterData} />} />
+        <Route path='/favorite' element={<FavCards data={data} favoriteItem={favoriteItem} />} />
+        <Route path='/details/:id' element={<Details setFilterData={setFilterData} favoriteItem={favoriteItem} />} />
+      </Routes>
+      <Footer />
+
+    </div>
   )
 }
 
