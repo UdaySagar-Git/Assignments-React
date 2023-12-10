@@ -7,6 +7,7 @@ import Footer from './Components/Footer'
 import Cards from './Components/Cards'
 import Details from './Components/Details'
 import FavCards from './Components/FavCards'
+
 const Home = () => {
   const [data, setData] = useState([]);
   const [value, setValue] = useState('');
