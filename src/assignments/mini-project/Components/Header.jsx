@@ -3,6 +3,7 @@ import { LuSearch } from "react-icons/lu";
 import { MdOutlineFavorite } from "react-icons/md";
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom'
+import { LuMenu } from "react-icons/lu";
 
 const Header = ({ setValue }) => {
     const navigate = useNavigate();
@@ -12,6 +13,7 @@ const Header = ({ setValue }) => {
     return (
         <div className='shadow-md px-2 sticky top-10 bg-white z-10'>
             <div className='flex items-center justify-between p-4'>
+                <LuMenu className='text-2xl sm:hidden' />
                 <Link to='/mini-project'>
                     <div className='text-2xl font-bold hidden sm:block'>
                         Project

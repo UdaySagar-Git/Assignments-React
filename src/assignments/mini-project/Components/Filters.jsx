@@ -7,7 +7,7 @@ const Filters = ({ setFilterData, filterData }) => {
     };
 
     return (
-        <div className="flex justify-center gap-4 p-4 mt-3">
+        <div className="flex justify-center gap-4 p-4 mt-3 flex-wrap">
             <button onClick={() => handleFilter('all')} className={`filter-btn ${filterData === 'all' ? 'active' : ''}`}>All</button>
             <button onClick={() => handleFilter("men's clothing")} className={`filter-btn ${filterData === "men's clothing" ? 'active' : ''}`}>Men's Clothing</button>
             <button onClick={() => handleFilter("women's clothing")} className={`filter-btn ${filterData === "women's clothing" ? 'active' : ''}`}>Women's Clothing</button>
