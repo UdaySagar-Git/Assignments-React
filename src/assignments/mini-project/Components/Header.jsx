@@ -11,7 +11,7 @@ const Header = ({ setValue }) => {
         navigate('/mini-project/favorite')
     }
     return (
-        <div className='shadow-md px-2 sticky top-10 bg-white z-10'>
+        <div className='shadow-md px-2 sticky top-8 bg-white z-10'>
             <div className='flex items-center justify-between p-4'>
                 <LuMenu className='text-2xl sm:hidden' />
                 <Link to='/mini-project'>

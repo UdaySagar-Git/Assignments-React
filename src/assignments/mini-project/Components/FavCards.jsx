@@ -9,8 +9,7 @@ const FavCards = ({ data, favoriteItem }) => {
 
     useEffect(() => {
         setFav(data.filter((item) => item.isFav === true))
-    }
-        , [data])
+    }, [data])
 
     return (
         <div className="w-full ">

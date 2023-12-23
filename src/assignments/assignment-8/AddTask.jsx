@@ -7,24 +7,26 @@ function AddTask() {
 
   function handleFormSubmit(event) {
     event.preventDefault()
-    setTasks([...tasks, { task:newTask , id: tasks.length + 1 , isCompleted: false }])
+    if (newTask === '') {
+      return alert('Please enter a task')
+    }
+    setTasks([...tasks, { task: newTask, id: tasks.length + 1, isCompleted: false }])
     setNewTask('')
-    console.log(tasks)
   }
 
   return (
-    <div className='p-4 border col-sm-4'>
+    <div className='p-4 border'>
       <p className='py-1 text-2xl text-center bg-dark text-info'>Add Task</p>
       <hr />
-      <form onSubmit={handleFormSubmit} className='flex justify-between gap-3'>
+      <form onSubmit={handleFormSubmit} className='flex justify-between gap-3 my-5'>
         <input
           type='text'
           value={newTask}
           onChange={(event) => setNewTask(event.target.value)}
-          className='flex flex-1 p-2 mt-3 border border-gray-300 rounded-md form-control focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent '
+          className='flex flex-grow px-2 mt-3 border border-gray-300 rounded-md form-control focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent'
           placeholder='Enter new task'
         />
-        <button className='px-4 py-2 mt-3 text-white bg-green-500 rounded-md hover:bg-green-600'>Add Task</button>
+        <button className='px-2 py-2 mt-3 text-white bg-green-500 rounded-md hover:bg-green-600'>Add Task</button>
       </form>
     </div>
   )
